@@ -6,7 +6,7 @@ Authors: Ofri Hefetz, Shai Shani
 ## Our Task 
 
 
-## What is sepsis?**
+## What is sepsis?
 Sepsis is a life-threatening medical emergency caused by your body’s overwhelming response to an infection. 
 Without urgent treatment, it can lead to tissue damage, organ failure and death.
 
