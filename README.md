@@ -3,6 +3,9 @@
 
 Authors: Ofri Hefetz, Shai Shani
 
+## Our Task 
+
+
 ## What is sepsis?**
 Sepsis is a life-threatening medical emergency caused by your body’s overwhelming response to an infection. 
 Without urgent treatment, it can lead to tissue damage, organ failure and death.
@@ -19,7 +22,17 @@ More than 1.7 million people in the United States receive a diagnosis of sepsis 
 
 https://my.clevelandclinic.org/health/diseases/12361-sepsis
 
----------------------------------------------------------------------------------------------------------------------
+## Environment
+
+
+
+## Data
+
+
+## Prediction
+
+
+
 
 
 
