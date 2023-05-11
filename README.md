@@ -35,6 +35,12 @@ For the purpose of forecasting, we tested four different models.
 The models were tested based on f1 score
 
 
+## Cloning Repository
+git clone https://github.com/OfriHefetz/Sepsis_Prediction.git
+cd Sepsis_Prediction
+conda env create -f environment.yml
+conda activate hw1_env
+python predict.py blabla/path/test (Path to the patient tables folder)
 
 
 
