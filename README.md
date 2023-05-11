@@ -1,9 +1,11 @@
 # Sepsis Prediction
 
 
-Authors: Ofri Hefetz, Shai Shani
+Authors: Ofri Hefetz, Shai Shani Bar
 
 ## Our Task 
+Our goal is to predict whether a patient in intensive care suffers from sepsis about 6 hours before being identified as suffering from sepsis,
+based on clinical data about his medical condition over time. 
 
 
 ## What is sepsis?
@@ -22,14 +24,15 @@ More than 1.7 million people in the United States receive a diagnosis of sepsis 
 
 https://my.clevelandclinic.org/health/diseases/12361-sepsis
 
-## Environment
-
-
 
 ## Data
+For each patient we have a file containing demographic and medical data about the patient, where each line represents data collected for one hour.
+The rows are sorted according to the hours, where the first row can be referred to as the first hour of the patient's arrival at the intensive care unit and the last hour as the time when the patient left the intensive care unit for some reason
 
 
 ## Prediction
+For the purpose of forecasting, we tested four different models. 
+The models were tested based on f1 score
 
 
 
