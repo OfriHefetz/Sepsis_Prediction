@@ -3,7 +3,6 @@ import pickle
 import sys
 import os
 import pandas as pd
-from sklearn.metrics import f1_score,  accuracy_score, confusion_matrix
 import numpy as np
 
 OPTIMAL_THRESHOLD = 0.35553555355535554
@@ -71,7 +70,5 @@ if __name__ == '__main__':
     y_predicted_label = 1 * (y_predict[:, 1] > OPTIMAL_THRESHOLD)
     df_['predicted_label'] = y_predicted_label
 
-    # agg_y = df_.groupby(by=['filename']).max()['SepsisPatient']
-    # print(f1_score(agg_y, y_predicted_label))
     print('Saving to CSV')
     df_[['filename', 'predicted_label']].to_csv('prediction.csv')
