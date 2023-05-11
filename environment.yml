@@ -111,6 +111,7 @@ name: hw1_env
     - ruamel-yaml-conda @ file:///tmp/build/80754af9/ruamel_yaml_1616016699510/work
     - scikit-image==0.18.1
     - scikit-learn
+    - sklearn
     - scipy==1.10.1
     - simplegeneric==0.8.1
     - sip==4.19.13
