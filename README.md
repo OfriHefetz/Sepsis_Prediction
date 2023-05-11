@@ -43,7 +43,7 @@ cd Sepsis_Prediction
 
 conda env create -f environment.yml
 
-conda activate hw1_env
+conda activate lab2_hw1_
 
 python predict.py blabla/path/test (Path to the patient tables folder)
 
