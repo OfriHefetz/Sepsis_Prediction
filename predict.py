@@ -4,7 +4,6 @@ import sys
 import os
 import pandas as pd
 import numpy as np
-import sklearn
 
 OPTIMAL_THRESHOLD = 0.35553555355535554
 SUFFIX='.psv'
