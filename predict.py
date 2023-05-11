@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 
 OPTIMAL_THRESHOLD = 0.35553555355535554
+SUFFIX='.psv'
 
 features = ['HR', 'O2Sat', 'Temp', 'SBP', 'MAP', 'DBP', 'Resp', 'EtCO2', 'BaseExcess', 'HCO3',
             'FiO2', 'pH', 'PaCO2', 'SaO2', 'AST', 'BUN', 'Alkalinephos', 'Calcium',
@@ -35,7 +36,7 @@ def read_data(path):
                 df = df.iloc[:index + 1, :]
                 df['SepsisPatient'] = 1
             # Add the filename/Patient name to the dataframe
-            df['filename'] = filename.removesuffix('.psv')
+            df['filename'] = filename[:-len(SUFFIX)]
             dfs.append(df)
     df = pd.concat(dfs, axis=0)
     return df
@@ -50,7 +51,6 @@ def data_prep(data):
 
 if __name__ == '__main__':
     input_dir_path = sys.argv[1]
-    # input_dir_path = '/Users/ofrihefetz/PycharmProjects/lab2_hw1/data/test'
     print('Reading dataframes')
     data = read_data(input_dir_path)
 
@@ -69,6 +69,7 @@ if __name__ == '__main__':
     y_predict = pickled_model.predict_proba(final_df)
     y_predicted_label = 1 * (y_predict[:, 1] > OPTIMAL_THRESHOLD)
     df_['predicted_label'] = y_predicted_label
+
 
     print('Saving to CSV')
     df_[['filename', 'predicted_label']].to_csv('prediction.csv')
